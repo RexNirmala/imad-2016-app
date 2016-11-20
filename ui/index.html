@@ -1,68 +1,15 @@
 <!doctype html>
 <html>
-    <head>
-        <title> PASSWORD GENERATOR </title>
-            <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="content">
-	<form name="pass">
-		<div id="c1">
-		<label>
-			<b>PASSWORD LENGTH </b>
-		</label>
-		<input type="text" name="len" class="t2" size="20" maxlength="50"/>
-		
-		<br> <br>
-		<label>
-			<b> LOWER CASE LETTERS </b>
-		</label> 
-			<input type="checkbox" name="low"  />
-		
-		<br>
-		<br>
-		 
-		<label>
-			<b>UPPER CASE LETTERS</b>
-		</label>
-		<input type="checkbox" name="up"  />
-		 
-		 <br> <br>
-		
-		<label>
-			<b> NUMBERS</b>
-		</label> 
-		<input type="checkbox" name="num"  />
-		 <br>
-		 <br>
-		
-		<label>
-			<b> SYMBOLS: </b> 
-		</label>	
-		
-		<input type="checkbox" name="sym"  />
-		
-		 </div>
-		  
-		
-		<p>
-		<input type="button" name="back" class="b1" value="Go Back" onClick="location.href='home.html';">						
-		<input type="text" id="res"  class="t1" size="20" maxlength="50" disabled="disabled"/>
-		<input type="button" name="gen" class="myButton" value="GENERATE PASSWORD" onClick=			"document.pass.res.value=
-		getPass(document.pass.len.value,
-		document.pass.up.checked,
-		document.pass.low.checked,
-		document.pass.num.checked,
-		document.pass.sym.checked);">
-		<input type="button" id="new" class="n1" value="CLEAR" onClick="pass.reset()"/>
-		</p>
-	</form>
-	</div>
-	
-	
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
+    <title>home page</title>
+
+</head>
+
+<body>
+<div class="content">
+<h1> SAFE PSWD </h1>
+<input type="button" name="go" class="g1" value="GET STRONG PASSWORD" onclick="location.href='pass.html';">
+<a href="def.html"><h6>Why We Need A Strong Password?</h6> </a>
+</div>
+</body>
     
-        
-    </body>
 </html>
