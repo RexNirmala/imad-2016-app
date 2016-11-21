@@ -227,8 +227,9 @@ function getPass(len,up,low,num,sym)
 	pswd+=pswd.charAt(Math.floor(Math.random() * pswd.length));
 	}
 	var res=pswd.substring(pswd.length,pswd.length-length);
-    alert("YOUR PASSWORD IS:" +res);
+    document.getElementById('res').value=res;
 	
+    
 }
 </script>
 </head>
