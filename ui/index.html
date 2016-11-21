@@ -205,7 +205,34 @@ body
 	background-color:#666666;
 	}
 </style>
+<script type="text/javascript">
+function getPass(len,up,low,num,sym)
+{
+    var length=document.pass.len.value;
+	var num = "0123456789";
+	var low = "abcdefghijklmnopqrstuvwxyz";
+	var up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	var sym = "`~!@#$%^&*()-_=+[{]}\\|;:'\",<.>/? ";
+	var pswd=" ";
+	if(document.pass.low.checked==true)
+	pswd+=low;
+	if(document.pass.num.checked==true)
+	pswd+=num;
+	if(document.pass.up.checked==true)
+	pswd+=up;
+	if(document.pass.sym.checked==true)
+	pswd+=sym;
+	for(i=0;i<length;i++)
+	{
+	pswd+=pswd.charAt(Math.floor(Math.random() * pswd.length));
+	}
+	var res=pswd.substring(pswd.length,pswd.length-length);
+    alert("YOUR PASSWORD IS:" +res);
+	
+}
+</script>
 </head>
+
 <body background="ui/1.jpg">
 <div class="content" background="ui/1.jpg">
 <h1> SAFE PSWD </h1>
