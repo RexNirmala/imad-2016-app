@@ -261,7 +261,29 @@ body
 	position:relative;
 	top:1px;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
 
 </style>
 <script type="text/javascript">
@@ -298,12 +320,13 @@ function getPass(len,up,low,num,sym)
 <div id="home" class="content" align="center">
 <br><br><br><br><br><br>    
 <h1 class="tit" align="center">SAFE PSWD  </h1>
-<a href="#pass">
+<ul>
+<li> <a href="#pass">
 <button class="g1"> Get Strong Password </button>   
-</a>
-<a href="#def"><button class="w1">why to go for safe pswd</button></a>
-<button class="g1"> pictures </button>
-
+</a> </li>
+<li><a href="#def"><button class="w1">why to go for safe pswd</button></a>
+<button class="g1"> About </button></li>
+</ul>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <h1 id="def">Why you need Strong password?</h1>
